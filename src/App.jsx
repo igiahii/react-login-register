@@ -1,6 +1,9 @@
 import React from "react";
 import "./App.scss";
 import { Login, Register } from "./components/login/index";
+import logo from "./images/ketabbaz-logo.png"
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -34,6 +37,8 @@ class App extends React.Component {
     const currentActive = isLogginActive ? "login" : "register";
     return (
       <div className="App">
+      
+        
         <div className="login">
           <div className="container" ref={ref => (this.container = ref)}>
             {isLogginActive && (
@@ -50,6 +55,7 @@ class App extends React.Component {
             onClick={this.changeState.bind(this)}
           />
         </div>
+      
       </div>
     );
   }

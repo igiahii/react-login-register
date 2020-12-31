@@ -36,7 +36,7 @@
           font-size: 20px;
         }
         input {
-          margin-top: 6px;
+          margin-top: 2px;
           min-width: 18em;
           height: 37px;
           padding: 0px 10px;
@@ -47,6 +47,8 @@
           border-radius: 4px;
           margin-bottom: 31px;
           transition: all 250ms ease-in-out;
+          
+    
           &:hover {
             //background-color: #ffffff;
             //box-shadow: 0px 0px 14px 0.3px #0e81ce96;
@@ -56,12 +58,44 @@
             outline: none;
             box-shadow: 0px 0px 12px 0.8px #3474dbb2;
           }
+         
         }
       }
     }
   }
 
   .footer {
-    margin-top: 3em;
+    // margin-top: 3em;
   }
+}
+
+#mycheckbox{
+  all: revert;
+  min-width: 22px;
+    height: 22px;
+    margin-right: 5px
+}
+
+.fo {
+    display: flex;
+    align-items: center;
+    transform: translate(-92px, -24px)
+}
+
+.fo1{
+    display: flex;
+    align-items: center;
+    transform: translate(-28px, -24px);
+
+    h3{
+        font-family: 'Open Sans';
+        font-size: 20px;
+        font-weight: lighter;
+
+    }
+    .register{
+     
+        transform: translate(11px, 1px);
+    
+    }
 }
